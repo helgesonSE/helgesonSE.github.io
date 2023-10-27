@@ -5,26 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start</title>
 </head>
-<body>
+<style>
+    .button:link, .button:visited{
+        font-family: Helvetica, sans-serif;
+        color: rgb(177, 177, 177);
+        border: 1px;
+        border-color: dimgray;
+        border-style: solid;
+        min-width: 6em;
+        padding: 1em 3em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 600ms ease-in-out;
+        transition: border-color 500ms ease-in-out;
+        transition: color 300ms ease-in-out;
+    }
+    .button:hover, .button.active{
+        background-color: rgba(136, 120, 120, 0.5);
+        border-color: aliceblue;
+        border-style: dotted;
+        color: aliceblue;
+    }
+</style>
+<body style="width:100%; margin: 0; color: aliceblue; 
+        font-family: Helvetica, sans-serif;
+        font-size: smaller;
+        background: linear-gradient(350deg, rgb(17, 16, 16), rgb(49, 47, 45), rgb(53, 42, 33));
+        background-image:  url(images/bg_tile.png), linear-gradient(350deg, rgb(17, 16, 16), rgb(49, 47, 45), rgb(53, 42, 33)); 
+        background-blend-mode: multiply; 
+        background-attachment: fixed;
+        background-repeat: repeat, no-repeat;">
     <header></header>
-    <nav>
+    <nav style="position: -webkit-sticky;
+                position: sticky;
+                top: 0;">
         <br>
-        <table style="position: relative; right: 50%; left: 50%; transform: translate(-50%, -50%)">
+        <table style="position: relative; right: 50%; left: 50%; transform: translateX(-50%)">
             <tr>
-                <th><a href="index.html">Start</a></th>
-                <th>||</th>
-                <th><a href="portfolio.html">Portfolio</a></th>
-                <th>||</th>
-                <th><a href="contact.html">Contact</a></th>
+                <th><a class="button" href="index.html">Start</a></th>
+                <th></th>
+                <th><a class="button" href="portfolio.html">Portfolio</a></th>
+                <th></th>
+                <th><a class="button" href="contact.html">Contact</a></th>
             </tr>
         </table>
         <br>
     </nav>
-    <section style="max-width: 900; margin-top: 300px;">
-        <table style="position: relative; right: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <section style="margin-top: 3em;">
+        <table style="position: relative; right: 50%; left: 50%; transform: translateX(-50%);">
             <tr>
                 <th width>
-                    <img src="../images/profil.jpg" alt="Profile Image" width="350">
+                    <img src="images/profil.jpg" alt="Profile Image" width="350">
                 </th>
                 <th style="max-width: 400px; min-width: 400px;">
                     <h1>
@@ -35,20 +67,25 @@
                         finally starting out on a new journey in system development. It's a new
                         arena in most ways, but it's exciting to be taking in new knowledge on a 
                         daily basis once again.
-                        <br><br>
+                    </p>
+                    <p>
                         When I'm not bound to my keyboard or caring for my kid you'll 
                         find me foraging for mushrooms or running TTRPGs as the Game Master.
                         I also have a cat and he's super cute. 
-                        <br><br>
-                        CV: <a href="../files/CV_Jens_Helgeson.pdf">Jens Helgeson</a>
-                        <br><br>
-                        GitHub: <a href="https://github.com/helgesonSE">HelgesonSE</a>
                     </p>
+                        <a class="button" href="https://github.com/helgesonSE">GitHub</a>
+                        <br><br>
+                        <a class="button" href="files/CV_Jens_Helgeson.pdf">CV</a>
                 </th>
             </tr>
         </table>
-
     </section>
+    <footer style="width: inherit; position: absolute; bottom: 0; text-align: right; 
+                font-size: small; color: aliceblue;">
+        <p>
+            Copyright © Jens Helgeson
+        </p>    
+    </footer>
 
 
 </body>
