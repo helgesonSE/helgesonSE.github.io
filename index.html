@@ -4,61 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-    .button:link, .button:visited{
-        font-family: Helvetica, sans-serif;
-        color: rgb(177, 177, 177);
-        border: 1px;
-        border-color: dimgray;
-        border-style: solid;
-        min-width: 6em;
-        padding: 1em 3em;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        transition: background-color 600ms ease-in-out;
-        transition: border-color 500ms ease-in-out;
-        transition: color 300ms ease-in-out;
-    }
-    .button:hover, .button.active{
-        background-color: rgba(136, 120, 120, 0.5);
-        border-color: aliceblue;
-        border-style: dotted;
-        color: aliceblue;
-    }
-</style>
-<body style="width:100%; margin: 0; color: aliceblue; 
-        font-family: Helvetica, sans-serif;
-        font-size: smaller;
-        background: linear-gradient(350deg, rgb(17, 16, 16), rgb(49, 47, 45), rgb(53, 42, 33));
-        background-image:  url(images/bg_tile.png), linear-gradient(350deg, rgb(17, 16, 16), rgb(49, 47, 45), rgb(53, 42, 33)); 
-        background-blend-mode: multiply; 
-        background-attachment: fixed;
-        background-repeat: repeat, no-repeat;">
+
+<body>
     <header></header>
-    <nav style="position: -webkit-sticky;
-                position: sticky;
-                top: 0;">
+    <nav>
         <br>
-        <table style="position: relative; right: 50%; left: 50%; transform: translateX(-50%)">
+        <table class="centeredTable">
             <tr>
-                <th><a class="button" href="index.html">Start</a></th>
-                <th></th>
-                <th><a class="button" href="portfolio.html">Portfolio</a></th>
-                <th></th>
-                <th><a class="button" href="contact.html">Contact</a></th>
+                <th class="navCell">
+                    <a class="button" href="index.html">Start</a></th>
+                <th class="navCell">
+                    <a class="button" href="portfolio.html">Portfolio</a></th>
+                <th class="navCell">
+                    <a class="button" href="contact.html">Contact</a></th>
             </tr>
         </table>
         <br>
     </nav>
-    <section style="margin-top: 3em;">
-        <table style="position: relative; right: 50%; left: 50%; transform: translateX(-50%);">
+    <section>
+        <table class="centeredTable">
             <tr>
                 <th width>
                     <img src="images/profil.jpg" alt="Profile Image" width="350">
                 </th>
-                <th style="max-width: 400px; min-width: 400px;">
+                <th class="textCell">
                     <h1>
                         Welcome
                     </h1>
@@ -75,15 +47,17 @@
                     </p>
                         <a class="button" href="https://github.com/helgesonSE">GitHub</a>
                         <br><br>
+                        <a class="button" href="https://www.linkedin.com/in/jens-helgeson-855695297/">LinkedIn</a>
+                        <br><br>
                         <a class="button" href="files/CV_Jens_Helgeson.pdf">CV</a>
                 </th>
             </tr>
         </table>
     </section>
-    <footer style="width: inherit; position: absolute; bottom: 0; text-align: right; 
-                font-size: small; color: aliceblue;">
+    <footer>
         <p>
-            Copyright © Jens Helgeson
+            Copyright ©<br>
+            Jens Helgeson
         </p>    
     </footer>
 

@@ -4,88 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header></header>
     <nav>
         <br>
-        <table style="position: relative; right: 50%; left: 50%; transform: translate(-50%, -50%)">
+        <table class="centeredTable">
             <tr>
-                <th><a href="index.html">Start</a></th>
-                <th>||</th>
-                <th><a href="portfolio.html">Portfolio</a></th>
-                <th>||</th>
-                <th><a href="contact.html">Contact</a></th>
+                <th class="navCell">
+                    <a class="button" href="index.html">Start</a></th>
+                <th class="navCell">
+                    <a class="button" href="portfolio.html">Portfolio</a></th>
+                <th class="navCell">
+                    <a class="button" href="contact.html">Contact</a></th>
             </tr>
         </table>
         <br>
     </nav>
-    <article style="max-width: 900; margin-top: 300px;">
-        <table style="position: relative; right: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <tr>
-                <th style="max-width: 500px; min-width: 400px;">
-                    <img src="../images/pyramid.png" alt="Pyramid" width="500">
-                </th>
-                <th style="max-width: 500px; min-width: 400px;">
-                    <h1>
-                        Pyramid-builder (C#)
-                    </h1>
-                    <p>
-                        Get your very own ancient pyramid right here in your own console! 
-                        An excersize in keeping code readable when it could've been really messy.
-                        <br>
-                        <br>
-                        Code @ <a href="https://github.com/helgesonSE/Pyramid">GitHub</a>
-                    </p>
-                </th>
-            </tr>
-        </table>
-    </article>
-    <article style="max-width: 900; margin-top: 0px;">
-        <table style="position: relative; right: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <tr>
-                <th style="max-width: 500px; min-width: 400px;">
-                    <img src="../images/npc_tool.png" alt="Pyramid" width="500">
-                </th>
-                <th style="max-width: 500px; min-width: 400px;">
-                    <h1>
-                        NPC-Tool (Python)
-                    </h1>
-                    <p>
-                        Helps you keep tab of cool NPCs you created when running your Kopparhavets 
-                        Hjältar TTRPG campaign. You can even have them fight!
-                        <br>
-                        <br>
-                        Code @ <a href="https://github.com/helgesonSE/NPC_Tool">GitHub</a>
-                    </p>
-                </th>
-            </tr>
-        </table>
-    </article>
-    <article style="max-width: 900; margin-top: 0px;">
-        <table style="position: relative; right: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <tr>
-                <th style="max-width: 500px; min-width: 400px;">
-                    <img src="../images/simpleWeatherApp.png" alt="Pyramid" width="500">
-                </th>
-                <th style="max-width: 500px; min-width: 400px;">
-                    <h1>
-                        Simple Weather App (C#)
-                    </h1>
-                    <p>
-                        Get the latest weather prognosis for your neighbourhood. Flip back and 
-                        forth between results.
-                        <br>
-                        <br>
-                        Code @ <a href="https://github.com/helgesonSE/SimpleWeatherApp">GitHub</a>
-                    </p>
-                </th>
-            </tr>
-        </table>
-    </article>
-    <footer style="position: sticky; bottom: 0;">
-        <p style="font-size: small; color: black; text-align: right;">
-            Copyright © Jens Helgeson
+    <section>
+        <h1>
+            Portfolio
+        </h1>
+        <article>
+            <table class="centeredTable">
+                <tr>
+                    <th class="projectImageCell">
+                        <img src="../images/pyramid.png" alt="Pyramid" width="500">
+                    </th>
+                    <th class="textCell">
+                        <h1>
+                            Pyramid-builder (C#)
+                        </h1>
+                        <p>
+                            Get your very own ancient pyramid right here in your own console! 
+                            An excersize in keeping code readable when it could've been really messy.
+                            <br>
+                            <br>
+                        </p>
+                            <a class="button" href="https://github.com/helgesonSE/Pyramid">> GitHub</a>     
+                    </th>
+                </tr>
+            </table>
+        </article>
+        <article>
+            <table class="centeredTable">
+                <tr>
+                    <th class="projectImageCell">
+                        <img src="../images/npc_tool.png" alt="Pyramid" width="500">
+                    </th>
+                    <th class="textCell">
+                        <h1>
+                            NPC-Tool (Python)
+                        </h1>
+                        <p>
+                            Helps you keep tab of cool NPCs you created when running your Kopparhavets 
+                            Hjältar TTRPG campaign. You can even have them fight!
+                            <br>
+                            <br>
+                        </p>
+                            <a class="button" href="https://github.com/helgesonSE/NPC_Tool">> GitHub</a>                        
+                    </th>
+                </tr>
+            </table>
+        </article>
+        <article>
+            <table class="centeredTable">
+                <tr>
+                    <th class="projectImageCell">
+                        <img src="../images/simpleWeatherApp.png" alt="Pyramid" width="500">
+                    </th>
+                    <th class="textCell">
+                        <h1>
+                            Simple Weather App (C#)
+                        </h1>
+                        <p>
+                            Get the latest weather prognosis for your neighbourhood. Flip back and 
+                            forth between results.
+                            <br>
+                            <br>
+                        </p>
+                            <a class="button" href="https://github.com/helgesonSE/SimpleWeatherApp">> GitHub</a>                       
+                    </th>
+                </tr>
+            </table>
+        </article>
+    </section>
+    <footer>
+        <p>
+            Copyright ©<br>
+            Jens Helgeson
         </p>    
     </footer>
 </body>

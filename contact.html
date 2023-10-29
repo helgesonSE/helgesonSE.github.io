@@ -4,51 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header></header>
     <nav>
         <br>
-        <table style="position: relative; right: 50%; left: 50%; transform: translate(-50%, -50%)">
+        <table class="centeredTable">
             <tr>
-                <th><a href="index.html">Start</a></th>
-                <th>||</th>
-                <th><a href="portfolio.html">Portfolio</a></th>
-                <th>||</th>
-                <th><a href="contact.html">Contact</a></th>
+                <th class="navCell">
+                    <a class="button" href="index.html">Start</a></th>
+                <th class="navCell">
+                    <a class="button" href="portfolio.html">Portfolio</a></th>
+                <th class="navCell">
+                    <a class="button" href="contact.html">Contact</a></th>
             </tr>
         </table>
         <br>
     </nav>
-    <section style="max-width: 900; margin-top: 300px;">
-        <table style="position: relative; right: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <tr>
-                <th width>
-                    <img src="../images/profil.jpg" alt="Profile Image" width="350">
-                </th>
-                <th style="max-width: 400px; min-width: 400px;">
-                    <h1>
-                        Welcome
-                    </h1>
-                    <p>
-                        After more than ten important years at Systembolaget, 
-                        finally starting out on a new journey in system development. It's a new
-                        arena in most ways, but it's exciting to be taking in new knowledge on a 
-                        daily basis once again.
+    <section>
+        <h1>
+            Contact
+        </h1>
+        <form>
+            <legend class="contactLegend">
+                <table class="contactTables">
+                    <tr>
+                        <th>
+                            <label for="name" name="labelForTextBox">Name:</label>
+                        </th>
+                        <th>
+                            <input type="text" name="name" placeholder="Your name...">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email" name="labelForEmail">Email*:</label>
+                        </th>
+                        <th>
+                            <input type="email" name="email" required placeholder="Your email...">
+                        </th>
+                    </tr>
+                </table>
+            </legend>
+            <table>
+                <tr>
+                    <th>
+                        <label for="subject" name="labelForSubject">Subject:</label>
+                    </th>
+                    <th>
+                        <select name="subject">
+                            <option value="work">Work</option>
+                            <option value="spam">Spam</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </th>
+                </tr>
+            </table>
+            <br>
+            <textarea name="message" placeholder="Enter message..."></textarea>
+            <table class="contactTables">
+                <tr>
+                    <th>
+                        <br>
+                        <input type="checkbox" name="agreeCheckBox" value="agree" required>
+                        <label for="agreeCheckBox">I consent to send an email?</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <br>
+                        <input class="button" type="submit" value="Send">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <br>
+                        - or -
                         <br><br>
-                        When I'm not bound to my keyboard or caring for my kid you'll 
-                        find me foraging for mushrooms or running TTRPGs as the Game Master.
-                        I also have a cat and he's super cute. 
-                        <br><br>
-                        CV: <a href="../files/CV_Jens_Helgeson.pdf">Jens Helgeson</a>
-                        <br><br>
-                        GitHub: <a href="https://github.com/helgesonSE">HelgesonSE</a>
-                    </p>
-                </th>
-            </tr>
-        </table>
-
+                        <a class="button" href="https://www.linkedin.com/in/jens-helgeson-855695297/">LinkedIn</a>
+                    </th>
+                </tr>
+            </table>
+        </form>
     </section>
+    <footer>
+        <p>
+            Copyright ©<br>
+            Jens Helgeson
+        </p>    
+    </footer>
 
 
 </body>
